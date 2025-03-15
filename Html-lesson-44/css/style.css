@@ -1,0 +1,28 @@
+.block-2 {
+  background: #bea77c;
+  display: inline-block;
+  max-width: 250px;
+  min-width: 50px;
+  max-height: 250px;
+  min-height: 50px;
+  padding: 30px;
+  margin: 5px;
+  border-radius: 20px;
+  text-align: justify;
+  box-shadow:inset 0px 0px 5px 5px #5e5a5a;
+}
+
+
+.block-1 {
+  background: #f2ecff;
+  padding: 3px;
+  max-width: 1500px;
+  min-width: 600px;
+  height: 600px;
+  max-height: 1000px;
+  min-height: 600px;
+  overflow: auto;
+  outline: auto;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
