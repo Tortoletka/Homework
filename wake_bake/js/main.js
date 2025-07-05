@@ -80,7 +80,7 @@
 
   }
 
-// -------------------------------Аккордион-------------------------
+  // -------------------------------Аккордион-------------------------
 
   const accordionLists = document.querySelectorAll('.accordion-list');
 
@@ -97,7 +97,7 @@
       const accordionItem = accordionControl.parentElement;
       const accordionContent = accordionControl.nextElementSibling;
 
-      if(accordionOpenedItem && accordionItem != accordionOpenedItem) {
+      if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
         accordionOpenedItem.classList.remove('accordion-list__item--opened')
         accordionOpenedContent.style.maxHeight = null;
       }
@@ -105,12 +105,43 @@
 
       if (accordionItem.classList.contains('accordion-list__item--opened')) {
         accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-      } else  {
+      } else {
         accordionContent.style.maxHeight = null;
       }
 
-    })
+    });
 
-  })
+  });
 
-}) ()
+
+  // -------------------------------Слайдер - галерея -------------------------
+
+  const swiper = new Swiper('.gallery__slider', {
+    spaceBetween: 15,
+    slidesPerView: 1.5,
+
+    pagination: {
+      el: '.gallery__pagination',
+      type: 'fraction',
+    },
+
+    navigation: {
+      nextEl: '.gallery__next',
+      prevEl: '.gallery__prev',
+    },
+
+    breakpoints: {
+      601: {
+        spaceBetween: 32,
+        slidesPerView: 3,
+      },
+      801: {
+        spaceBetween: 32,
+      },
+      1101: {
+        slidesPerView: 4,
+      }
+    }
+  });
+
+})()
