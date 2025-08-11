@@ -6,11 +6,20 @@
   --transition: all .4s
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+
 .body {
   font-family: "Inter", "Arial", sans-serif;
   line-height: 1.2;
   color: var(--general-text);
   background: var(--general-bg);
+}
+
+.body--opened-menu {
+  overflow: hidden;
 }
 
 .wrapper {

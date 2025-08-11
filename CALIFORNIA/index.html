@@ -7,14 +7,17 @@
   <title>CALIFORNIA</title>
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search">
+
 </head>
 
-<body>
+<body class="body">
   <div class="wrapper">
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a class="header__logo" href="#">
+          <a class="header__logo" href="/">
             <svg width="170" height="21" viewBox="0 0 170 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1_27)">
                 <path
@@ -44,38 +47,35 @@
                   d="M149.91 20.6286L157.583 0.371429H162.41L170 20.6286H164.783L159.062 3.6H160.876L155.017 20.6286H149.91Z"
                   fill="black" />
               </g>
-              <defs>
-                <clipPath id="clip0_1_27">
-                  <rect width="170" height="21" fill="white" />
-                </clipPath>
-              </defs>
             </svg>
-
           </a>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__items">
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="#all_products">
                   all products
                 </a>
               </li>
               <li class="nav__items">
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="#Solutions">
                   Solutions
                 </a>
               </li>
               <li class="nav__items">
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="#About">
                   ABOUT
                 </a>
               </li>
               <li class="nav__items">
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="#Support">
                   Support
                 </a>
               </li>
             </ul>
           </nav>
+          <a class="burger-icon" href="#">
+            <span></span>
+          </a>
           <div class="header__shop">
             <a class="header__search" href="#">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -127,7 +127,7 @@
         </div>
       </section>
 
-      <section class="latest__offers">
+      <section class="latest__offers" id="all_products">
         <div class="container">
           <div class="latest__offers-tittle">
             <h1 class="latest__offers-heading">
@@ -179,7 +179,7 @@
         </div>
       </section>
 
-      <section class="bestselling">
+      <section class="bestselling" id="Solutions">
         <div class="container">
           <div class="bestselling__tittle">
             <div class="bestselling__text">
@@ -262,7 +262,7 @@
         </div>
       </section>
 
-      <section class="Limited__Edition">
+      <section class="Limited__Edition" id="Licensing">
         <div class="container">
           <div class="Limited__Edition-tittle">
             <H1 class="Limited__Edition-heading">
@@ -295,7 +295,7 @@
               <a class="content__button button" href="#">
                 Explore
               </a>
-              <img class="content__img-two" src="img/content/The gadget.png" alt="гаджеты">
+              <img class="content__img-two" src="img/content/The_gadget.png" alt="гаджеты">
             </div>
             <div class="block__content-three">
               <p class="content__text">
@@ -307,13 +307,13 @@
               <a class="content__button button" href="#">
                 Explore
               </a>
-              <img class="content__img-three" src="img/content/laptop & phone.png" alt="ноут и телефон">
+              <img class="content__img-three" src="img/content/laptop_&_phone.png" alt="ноут и телефон">
             </div>
           </div>
         </div>
       </section>
 
-      <section class="new__ideas">
+      <section class="new__ideas" id="Support">
         <div class="container">
           <div class="new__ideas-tittle">
             <H1 class="new__ideas-text">
@@ -355,74 +355,77 @@
         </div>
       </section>
 
-      <section class="search">
+      <section class="block-search" id="About">
         <div class="container">
-          <div class="search__tittle">
-            <H1 class="search__heading">
-              Looking for anything else?
-            </H1>
-          </div>
-          <form class="search__form" id="search__form">
-            <input class="contact__form-input" type="text" id="search-input" placeholder="Search keyword">
-            <button class="contact__form-button" type="submit" id="search-button">
-              <img src="img/icons/loop.svg" alt="">
-            </button>
-          </form>
-          <div class="search__hints">
-            <a class="content__button-one button" href="#">
-              iPhone
-            </a>
-            <a class="content__button-two button" href="#">
-              Charger
-            </a>
-            <a class="content__button-three button" href="#">
-              Gift
-            </a>
-            <a class="content__button-four button" href="#">
-              Google Pixel 3
-            </a>
-            <a class="content__button-five button" href="#">
-              Keyboard
-            </a>
-            <a class="content__button-six button" href="#">
-              13 Pro Max
-            </a>
-            <a class="content__button-seven button" href="#">
-              iPhone 12
-            </a>
-            <a class="content__button-eight button" href="#">
-              Laptop
-            </a>
-            <a class="content__button-nine button" href="#">
-              Mobile
-            </a>
-          </div>
-          <div class="contact">
-            <div class="contact__tittle">
-              <H1 class="contact__info">
-                Never miss a thing
-              </H1>
-              <p class="contact__text">
-                Sign up for texts to be notified about our best offers on the perfect gifts.
-              </p>
-              <img src="img/content/the gadget-2.png" alt="">
-              <div class="contact__form">
-                <label class="contact__label-field">
-                  <input type="email" id="email" name="email" placeholder="Your email">
-                  <a class="button__email" href="#">Sign up</a>
-                </label>
+          <div class="search__form">
+            <form>
+              <h1 class="heading-text">
+                Looking for anything else?
+              </h1>
+              <div class="search">
+                <span class="search-icon material-symbols-outlined">
+                  search
+                </span>
+                <input class="search-input" type="search" placeholder="Search keyword">
               </div>
+            </form>
+            <div class="search__suggestions">
+              <a class="search-span button" href="#">
+                iPhone
+              </a>
+              <a class="search-span button" href="#">
+                Charger
+              </a>
+              <a class="search-span button" href="#">
+                Gift
+              </a>
+              <a class="search-span button" href="#">
+                Google Pixel 3
+              </a>
+              <a class="search-span button" href="#">
+                Keyboard
+              </a>
+              <a class="search-span button" href="#">
+                13 Pro Max
+              </a>
+              <a class="search-span button" href="#">
+                iPhone 12
+              </a>
+              <a class="search-span button" href="#">
+                Laptop
+              </a>
+              <a class="search-span button" href="#">
+                iPhone
+              </a>
+            </div>
+          </div>
+          <div class="block__email">
+            <div class="block__email-style">
+              <form class="form-email">
+                <h1 class="heading-text">
+                  Never miss a thing
+                </h1>
+                <p class="bottom-text">
+                  Sign up for texts to be notified about our best offers on the perfect gifts.
+                </p>
+                <img src="/img/content/the_gadget-2.png" alt="гаджеты">
+                <div class="email__inner">
+                  <input class="email__input" type="email" placeholder="Your email">
+                  <button class="email__button" type="submit">Sign up</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </section>
+
     </main>
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
           <div class="footer__top">
             <div class="footer__col">
-              <a class="footer__logo" href="#">
+              <a class="footer__logo" href="/">
                 <svg width="170" height="21" viewBox="0 0 170 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_1_27)">
                     <path
@@ -465,54 +468,62 @@
             </div>
             <nav class="footer__nav">
               <ul class="footer__nav-list">
-                <H2 class="footer__nav-heading">
-                  All products
-                </H2>
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Phones</a>
+                <li>
+                  <H2 class="footer__nav-heading">
+                    All products
+                  </H2>
                 </li>
                 <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Watch</a>
+                  <a class="footer__nav-link" href="#all_products">Phones</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Tablet</a>
+                  <a class="footer__nav-link" href="#all_products">Watch</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Laptops</a>
-                </li>
-              </ul>
-              <ul class="footer__nav-list">
-                <H2 class="footer__nav-heading">
-                  Company
-                </H2>
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">About</a>
+                  <a class="footer__nav-link" href="#all_products">Tablet</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Support</a>
+                  <a class="footer__nav-link" href="#all_products">Laptops</a>
                 </li>
               </ul>
               <ul class="footer__nav-list">
-                <H2 class="footer__nav-heading">
-                  Support
-                </H2>
-                <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Style Guide</a>
+                <li>
+                  <H2 class="footer__nav-heading">
+                    Company
+                  </H2>
                 </li>
                 <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Licensing</a>
+                  <a class="footer__nav-link" href="#About">About</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Change Log</a>
+                  <a class="footer__nav-link" href="#Support">Support</a>
+                </li>
+              </ul>
+              <ul class="footer__nav-list">
+                <li>
+                  <H2 class="footer__nav-heading">
+                    Support
+                  </H2>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#Support">Style Guide</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#Licensing">Licensing</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#Support">Change Log</a>
                 </li>
                 <li class="footer__nav-item">
                   <a class="footer__nav-link" href="#">Contact</a>
                 </li>
               </ul>
               <ul class="footer__nav-list">
-                <H2 class="footer__nav-heading">
-                  Follow Us
-                </H2>
+                <li>
+                  <H2 class="footer__nav-heading">
+                    Follow Us
+                  </H2>
+                </li>
                 <li class="footer__nav-item">
                   <a class="footer__nav-link" href="#">Instagram</a>
                 </li>
@@ -535,7 +546,7 @@
                 <span class="address__text">
                   Made By:
                 </span>
-                <a class="address__link" href="#">
+                <a class="address__link" href="/">
                   Azwedo
                   <svg width="19" height="16" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1_354)">
@@ -544,11 +555,6 @@
                       <path d="M1.61539 1.38477H19.3846V16.6155" stroke="#08090D" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" />
                     </g>
-                    <defs>
-                      <clipPath id="clip0_1_354">
-                        <rect width="21" height="18" fill="white" />
-                      </clipPath>
-                    </defs>
                   </svg>
                 </a>
               </address>
@@ -556,7 +562,7 @@
                 <span class="address__text">
                   Powered by:
                 </span>
-                <a class="address__link" href="#">
+                <a class="address__link" href="/">
                   Webflow
                   <svg width="19" height="16" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1_354)">
@@ -565,11 +571,6 @@
                       <path d="M1.61539 1.38477H19.3846V16.6155" stroke="#08090D" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" />
                     </g>
-                    <defs>
-                      <clipPath id="clip0_1_354">
-                        <rect width="21" height="18" fill="white" />
-                      </clipPath>
-                    </defs>
                   </svg>
                 </a>
               </address>
@@ -579,6 +580,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
